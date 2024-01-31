@@ -6,7 +6,7 @@ function check (input) {
     }
     let array1 = array.splice(3);
     let array2 = array.splice(-array.length);
-    
+
     function getSum (input2) {
         let sum = 0;
         for (let i = 0 ; i < input2.length; i++) {
@@ -15,7 +15,7 @@ function check (input) {
         return sum;
     }
     
-   return getSum(array1) === getSum(array2) ? 'true' : 'false';
+   return getSum(array1) === getSum(array2) ? true : false;
     
 }
 console.log(check(123456));
