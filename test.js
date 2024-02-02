@@ -8,8 +8,8 @@ function check (input) {
 
     function getSum (input2) {
         let sum = 0;
-        for (let i = 0 ; i < input2.length; i++) {
-            sum += input2[i];
+        for (const i of input2) {
+            sum += i;
         }
         return sum;
     }
